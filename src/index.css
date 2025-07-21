@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --color-bg: #f8fafc;
+  --color-bg-alt: #fff;
+  --color-text: #0f172a;
+  --color-primary: #38bdf8;
+  --color-secondary: #1e293b;
+  --color-card: #f8fafc;
+  --color-shadow: 0 4px 24px 0 rgba(15,23,42,0.07);
+  --color-link: #38bdf8;
+  --color-link-hover: #0ea5e9;
+}
+[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-bg-alt: #1e293b;
+  --color-text: #f8fafc;
+  --color-primary: #38bdf8;
+  --color-secondary: #f8fafc;
+  --color-card: #1e293b;
+  --color-shadow: 0 4px 24px 0 rgba(56,189,248,0.10);
+  --color-link: #38bdf8;
+  --color-link-hover: #f8fafc;
+}
+
+html, body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background 0.3s, color 0.3s;
+}
+h1, h2, h3, h4 {
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.15rem; }
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
