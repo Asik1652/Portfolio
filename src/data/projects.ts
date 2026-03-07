@@ -1,37 +1,48 @@
-export const projects = [
-  {
-    title: "Chat Application",
-    tech: ["React Native", "Firebase"],
-    description: [
-      "Real-time messaging using Firebase Firestore",
-      "Firebase Auth for secure user login",
-      "Optimized for cross-platform usability"
-    ]
-  },
-  {
-    title: "E-commerce Website",
-    tech: ["Django", "Bootstrap", "JS"],
-    description: [
-      "Built an end-to-end store with Django and Bootstrap",
-      "Secure checkout, cart system, and payment integration",
-      "Used Django ORM for data handling"
-    ]
-  },
+export interface Project {
+  title: string;
+  description: string[];
+  tech: string[];
+  status?: string;
+  liveOnStore?: boolean;
+  icon: string;
+}
+
+export const projects: Project[] = [
   {
     title: "CRM System",
-    tech: ["React Native", "Firebase"],
-    description: [
-      "Full mobile CRM used by internal teams",
-      "Built custom Kanban boards, swipeable cards, charts",
-      "Integrated push notifications using Firebase"
-    ]
-  },
-  {
-    title: "FEMS (Field Employee Management System)",
+    icon: "📱",
+    status: "Live on Play Store 🟢",
+    liveOnStore: true,
     tech: ["React Native", "Firebase", "Google Maps API"],
     description: [
-      "Track field agent location, status, and performance",
-      "Real-time updates with Firebase and Google Maps API"
-    ]
-  }
-]; 
+      "Full mobile CRM serving 500+ active daily users",
+      "Kanban pipeline, call logging & lead management",
+      "Location tracking with Google Maps API integration",
+      "Push notifications via Firebase Cloud Messaging",
+    ],
+  },
+  {
+    title: "FEMS — Field Employee Management",
+    icon: "🗺️",
+    status: "Live on Play Store 🟢",
+    liveOnStore: true,
+    tech: ["React Native", "Firebase", "Google Maps API"],
+    description: [
+      "Real-time field agent location tracking on live map",
+      "Live map updates with Firebase & Google Maps",
+      "Performance reports and attendance management",
+      "Offline-ready with local state sync",
+    ],
+  },
+  {
+    title: "Chat Application",
+    icon: "💬",
+    tech: ["React Native", "Firebase"],
+    description: [
+      "Real-time messaging with Firebase Firestore",
+      "Firebase Auth for secure cross-platform login",
+      "Optimized for both Android & iOS",
+      "Clean UI with smooth message animations",
+    ],
+  },
+];
