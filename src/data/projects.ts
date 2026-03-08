@@ -15,10 +15,10 @@ export const projects: Project[] = [
     liveOnStore: true,
     tech: ["React Native", "Firebase", "Google Maps API"],
     description: [
-      "Full mobile CRM serving 500+ active daily users",
-      "Kanban pipeline, call logging & lead management",
-      "Location tracking with Google Maps API integration",
-      "Push notifications via Firebase Cloud Messaging",
+      "Built and shipped to Play Store with Kanban pipeline, call logging, and salesperson location tracking",
+      "Integrated Firebase Auth, FCM push notifications, and Google Maps API",
+      "Built custom UI library — dropdown, data table, date filter, and Kanban board components",
+      "Architected single codebase boilerplate supporting Android & iOS with standardized folder structure, navigation, and theme system",
     ],
   },
   {

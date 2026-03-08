@@ -16,6 +16,8 @@ export const skillGroups: SkillGroup[] = [
       "Firebase",
       "FCM",
       "Google Maps API",
+      "StyleSheet",
+      "Custom Theming",
       "Java",
       "Kotlin",
     ],
@@ -23,12 +25,12 @@ export const skillGroups: SkillGroup[] = [
   {
     label: "Web",
     icon: "🌐",
-    skills: ["React JS", "Node.js", "JavaScript", "REST APIs", "React Hooks"],
+    skills: ["React JS", "Node.js", "JavaScript", "React Hooks", "REST APIs"],
   },
   {
     label: "Tools",
     icon: "🛠️",
-    skills: ["Git", "Postman", "VS Code", "GitHub Copilot", "Cursor AI"],
+    skills: ["Git", "Postman", "VS Code", "GitHub Copilot", "Cursor AI", "Cline AI", "ChatGPT"],
   },
 ];
 
