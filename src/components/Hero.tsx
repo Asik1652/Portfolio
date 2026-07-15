@@ -175,8 +175,7 @@ const Hero: React.FC = () => {
           </a>
           <a
             href={developerInfo.resume}
-            target="_blank"
-            rel="noopener noreferrer"
+            download="Asik_Umar_TK_Resume.pdf"
             className="btn-outline"
           >
             <span>↓</span>
@@ -267,40 +266,7 @@ const Hero: React.FC = () => {
           ))}
         </div>
 
-        {/* Scroll indicator */}
-        <div
-          className="hero-item"
-          style={{
-            opacity: 0,
-            transform: 'translateY(30px)',
-            transition: 'all 0.7s cubic-bezier(0.23,1.01,0.32,1)',
-            marginTop: 64,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: 6,
-          }}
-        >
-          <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)', letterSpacing: '0.1em' }}>
-            scroll down
-          </span>
-          <div style={{
-            width: 24, height: 40,
-            border: '1.5px solid rgba(0,212,255,0.3)',
-            borderRadius: 12,
-            display: 'flex',
-            alignItems: 'flex-start',
-            justifyContent: 'center',
-            padding: 4,
-          }}>
-            <div style={{
-              width: 4, height: 8,
-              borderRadius: 2,
-              background: 'var(--blue)',
-              animation: 'scrollDot 1.8s ease-in-out infinite',
-            }} />
-          </div>
-        </div>
+
       </div>
 
       <style>{`

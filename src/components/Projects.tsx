@@ -72,15 +72,20 @@ const ProjectCard: React.FC<{ project: typeof projects[0]; delay: number }> = ({
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 16 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <span style={{ fontSize: '2rem' }}>{project.icon}</span>
-            <h3 style={{
-              fontFamily: 'var(--font-main)',
-              fontSize: '1.1rem',
-              fontWeight: 700,
-              color: '#fff',
-              lineHeight: 1.3,
-            }}>
-              {project.title}
-            </h3>
+            <div>
+              <h3 style={{
+                fontFamily: 'var(--font-main)',
+                fontSize: '1.1rem',
+                fontWeight: 700,
+                color: '#fff',
+                lineHeight: 1.3,
+              }}>
+                {project.title}
+              </h3>
+              <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                {project.org}
+              </span>
+            </div>
           </div>
           {project.liveOnStore && (
             <span style={{

@@ -1,36 +1,72 @@
 export interface SkillGroup {
   label: string;
   icon: string;
+  percent: number;
   skills: string[];
 }
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: "Mobile",
+    label: "Mobile Development",
     icon: "📱",
+    percent: 70,
     skills: [
-      "React Native CLI",
-      "TypeScript",
-      "Redux Toolkit",
+      "React Native",
       "React Navigation",
-      "Firebase",
+      "Redux Toolkit",
+      "TypeScript",
+      "Firebase Auth",
+      "Firestore",
       "FCM",
       "Google Maps API",
-      "StyleSheet",
-      "Custom Theming",
-      "Java",
-      "Kotlin",
+      "REST APIs & Axios",
+      "Native Modules (Android)",
+      "AsyncStorage",
+      "Play Store Deployment",
+      "Jest",
     ],
   },
   {
-    label: "Web",
+    label: "Frontend Web",
     icon: "🌐",
-    skills: ["React JS", "Node.js", "JavaScript", "React Hooks", "REST APIs"],
+    percent: 20,
+    skills: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "Responsive UI",
+      "REST API Integration",
+    ],
   },
   {
-    label: "Tools",
-    icon: "🛠️",
-    skills: ["Git", "Postman", "VS Code", "GitHub Copilot", "Cursor AI", "Cline AI", "ChatGPT"],
+    label: "Backend (AI-Assisted)",
+    icon: "⚙️",
+    percent: 5,
+    skills: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Flask",
+      "Python",
+      "REST API Design",
+      "GitHub Copilot",
+      "Cursor AI",
+      "Cline AI",
+      "ChatGPT",
+      "Gemini",
+    ],
+  },
+  {
+    label: "QA & Testing",
+    icon: "🧪",
+    percent: 5,
+    skills: [
+      "Selenium",
+      "Pytest",
+      "JMeter",
+      "Unittest",
+    ],
   },
 ];
 
@@ -56,20 +92,46 @@ export const awards: Award[] = [
   },
 ];
 
+export interface ExperienceRole {
+  title: string;
+  period: string;
+  highlights: string[];
+  tech: string[];
+}
+
 export interface Experience {
   company: string;
-  roles: {
-    title: string;
-    period: string;
-  }[];
+  location: string;
+  roles: ExperienceRole[];
 }
 
 export const experiences: Experience[] = [
   {
     company: "Techgenzi Private Limited",
+    location: "Coimbatore",
     roles: [
-      { title: "React Native Developer", period: "May 2023 – Present" },
-      { title: "Software Tester", period: "July 2022 – May 2023" },
+      {
+        title: "React Native Developer",
+        period: "May 2023 – Present",
+        highlights: [
+          "Developed and shipped production-level cross-platform mobile apps across CRM, TMS, CMS, and FEMS projects",
+          "Built the CRM app with an AI-powered visiting card scanner, FCM notifications, and Google Maps integration",
+          "Independently built and published FEMS (Factory Efficiency Management System) on the Play Store",
+          "Built a GPS-based school bus tracking system for real-time parent visibility",
+          "Built an in-house analytics SDK tracking customer usage across mobile and web apps, with a React.js/Flask dashboard layer",
+        ],
+        tech: ["React Native", "TypeScript", "Firebase", "Redux Toolkit", "Google Maps API"],
+      },
+      {
+        title: "Software Tester (QA Automation)",
+        period: "Jul 2022 – May 2023",
+        highlights: [
+          "Automated regression and performance testing using Selenium (Python) with Pytest and JMeter for load testing",
+          "Reduced manual testing time by 50% through automated test suites",
+          "Promoted internally to the development team based on consistent performance and initiative",
+        ],
+        tech: ["Selenium", "Python", "JMeter", "Pytest"],
+      },
     ],
   },
 ];

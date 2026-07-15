@@ -3,23 +3,29 @@ import { skillGroups } from '../data/skills';
 import { useScrollAnimationAll } from '../hooks/useScrollAnimation';
 
 const CATEGORY_COLORS: Record<string, { bg: string; border: string; text: string; glow: string }> = {
-  Mobile: {
+  'Mobile Development': {
     bg: 'rgba(0,212,255,0.06)',
     border: 'rgba(0,212,255,0.18)',
     text: '#00d4ff',
     glow: '0 0 16px rgba(0,212,255,0.35)',
   },
-  Web: {
+  'Frontend Web': {
     bg: 'rgba(124,58,237,0.07)',
     border: 'rgba(124,58,237,0.22)',
     text: '#a78bfa',
     glow: '0 0 16px rgba(124,58,237,0.35)',
   },
-  Tools: {
+  'Backend (AI-Assisted)': {
     bg: 'rgba(251,146,60,0.07)',
     border: 'rgba(251,146,60,0.2)',
     text: '#fb923c',
     glow: '0 0 16px rgba(251,146,60,0.3)',
+  },
+  'QA & Testing': {
+    bg: 'rgba(34,197,94,0.06)',
+    border: 'rgba(34,197,94,0.2)',
+    text: '#4ade80',
+    glow: '0 0 16px rgba(34,197,94,0.3)',
   },
 };
 
@@ -48,7 +54,7 @@ const Skills: React.FC = () => {
           gap: 24,
         }}>
           {skillGroups.map((group, gi) => {
-            const colors = CATEGORY_COLORS[group.label] || CATEGORY_COLORS.Tools;
+            const colors = CATEGORY_COLORS[group.label] || CATEGORY_COLORS['Mobile Development'];
             return (
               <div
                 key={group.label}
