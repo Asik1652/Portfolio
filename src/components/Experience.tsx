@@ -70,7 +70,7 @@ const Experience: React.FC = () => {
                   {exp.company}
                 </h3>
                 <span style={{ fontSize: '0.8rem', color: 'var(--blue)', fontFamily: 'var(--font-mono)' }}>
-                  July 2022 – Present
+                  {exp.location} · Jul 2022 – Present
                 </span>
               </div>
             </div>
@@ -157,38 +157,52 @@ const Experience: React.FC = () => {
                     </div>
 
                     {i === 0 && (
-                      <div style={{ marginTop: 14, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-                        {['React Native', 'TypeScript', 'Firebase', 'Redux'].map(t => (
-                          <span key={t} style={{
-                            padding: '3px 10px',
-                            background: 'rgba(0,212,255,0.07)',
-                            border: '1px solid rgba(0,212,255,0.15)',
-                            borderRadius: 50,
-                            fontSize: '0.72rem',
-                            fontFamily: 'var(--font-mono)',
-                            color: 'var(--blue)',
-                          }}>
-                            {t}
-                          </span>
-                        ))}
+                      <div style={{ marginTop: 14 }}>
+                        <ul style={{ margin: 0, paddingLeft: 18, display: 'flex', flexDirection: 'column', gap: 6 }}>
+                          {role.highlights.map((h: string) => (
+                            <li key={h} style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{h}</li>
+                          ))}
+                        </ul>
+                        <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                          {role.tech.map((t: string) => (
+                            <span key={t} style={{
+                              padding: '3px 10px',
+                              background: 'rgba(0,212,255,0.07)',
+                              border: '1px solid rgba(0,212,255,0.15)',
+                              borderRadius: 50,
+                              fontSize: '0.72rem',
+                              fontFamily: 'var(--font-mono)',
+                              color: 'var(--blue)',
+                            }}>
+                              {t}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     )}
 
                     {i === 1 && (
-                      <div style={{ marginTop: 14, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-                        {['Selenium', 'Python', 'JMeter', 'unittest'].map(t => (
-                          <span key={t} style={{
-                            padding: '3px 10px',
-                            background: 'rgba(124,58,237,0.07)',
-                            border: '1px solid rgba(124,58,237,0.2)',
-                            borderRadius: 50,
-                            fontSize: '0.72rem',
-                            fontFamily: 'var(--font-mono)',
-                            color: '#a78bfa',
-                          }}>
-                            {t}
-                          </span>
-                        ))}
+                      <div style={{ marginTop: 14 }}>
+                        <ul style={{ margin: 0, paddingLeft: 18, display: 'flex', flexDirection: 'column', gap: 6 }}>
+                          {role.highlights.map((h: string) => (
+                            <li key={h} style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{h}</li>
+                          ))}
+                        </ul>
+                        <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                          {role.tech.map((t: string) => (
+                            <span key={t} style={{
+                              padding: '3px 10px',
+                              background: 'rgba(124,58,237,0.07)',
+                              border: '1px solid rgba(124,58,237,0.2)',
+                              borderRadius: 50,
+                              fontSize: '0.72rem',
+                              fontFamily: 'var(--font-mono)',
+                              color: '#a78bfa',
+                            }}>
+                              {t}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </div>

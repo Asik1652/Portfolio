@@ -3,7 +3,7 @@ import { developerInfo } from '../data/developerInfo';
 import { useScrollAnimationAll } from '../hooks/useScrollAnimation';
 
 const STATS = [
-  { value: '~3', label: 'Years Experience' },
+  { value: '4', label: 'Years Experience' },
   { value: '500+', label: 'Daily Active Users' },
   { value: '2', label: 'Play Store Apps' },
   { value: '∞', label: 'Lines of Passion' },
@@ -74,12 +74,12 @@ const About: React.FC = () => {
                 <br />
                 &nbsp;&nbsp;<span style={{ color: '#a78bfa' }}>exp</span>
                 <span style={{ color: '#fff' }}>: </span>
-                <span style={{ color: '#fb923c' }}>"~3 years"</span>
+                <span style={{ color: '#fb923c' }}>"4 years"</span>
                 <span>,</span>
                 <br />
                 &nbsp;&nbsp;<span style={{ color: '#a78bfa' }}>location</span>
                 <span style={{ color: '#fff' }}>: </span>
-                <span style={{ color: '#86efac' }}>"Coimbatore, India"</span>
+                <span style={{ color: '#86efac' }}>"Sivagangai, Tamil Nadu"</span>
                 <span>,</span>
                 <br />
                 &nbsp;&nbsp;<span style={{ color: '#a78bfa' }}>status</span>
@@ -151,10 +151,10 @@ const About: React.FC = () => {
 
             {/* Key facts */}
             {[
-              { icon: '🚀', text: 'Started in QA, transitioned to full React Native dev' },
-              { icon: '📱', text: '2 apps live on Play Store, serving 500+ daily users' },
-              { icon: '🏢', text: 'Nearly 3 years at Techgenzi building enterprise-grade apps' },
-              { icon: '🌏', text: 'Open to remote React Native & React JS opportunities' },
+              { icon: '🚀', text: '10 months in QA automation → promoted to React Native Developer' },
+              { icon: '📱', text: '2 apps live on Play Store — CRM & FEMS, used by 500+ daily users' },
+              { icon: '🤖', text: 'Built AI-powered visiting card scanner integrated into live CRM' },
+              { icon: '🌏', text: 'Open to remote/hybrid React Native roles — immediate joiner' },
             ].map((fact, i) => (
               <div
                 key={i}
@@ -177,13 +177,12 @@ const About: React.FC = () => {
 
             <a
               href={developerInfo.resume}
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Asik_Umar_TK_Resume.pdf"
               className="btn-primary"
               style={{ marginTop: 32, display: 'inline-flex' }}
             >
-              <span>View Resume</span>
-              <span>↗</span>
+              <span>Download Resume</span>
+              <span>↓</span>
             </a>
           </div>
         </div>
